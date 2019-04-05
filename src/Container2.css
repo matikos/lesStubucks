@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url(./fonts/gilroy-extrabold-webfont.woff2) format('woff2'),
+         url(./fonts/gilroy-extrabold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.10fr 1.5fr;
+    grid-template-areas: "newProductTitle" "arrow" "container2";
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: arrow;
+    height: 100%;
+    background-color: rgba(16, 16, 23, 0.947);
+}  
+.arrow1{
+    height: 50%;
+}
+.newProductTitle { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".";
+    background-color:white;
+    height: 100%;
+    grid-area: newProductTitle;
+}
+.title1{
+    color: rgba(16, 16, 23, 0.947);
+    font-family: 'gilroy-extrabold', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}  
+.container2 { 
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "background textContent";
+    height: 90vh;
+    background-color: rgba(16, 16, 23, 0.947);
+    grid-area: container2;
+    grid-column-gap: 3em;
+}
+.background{
+    grid-column: 1;
+    height:100%;
+    grid-area: background;
+}
+.background2{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+.textContent{
+    display: grid;
+    grid-template-columns: 0.9fr;
+    grid-template-rows: 1.1fr 1.3fr 0.6fr;
+    grid-template-areas: "." "." ".";
+    grid-area: textContent;
+    height: 100%;
+}
+.title{
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:white;
+    font-family: 'gilroy-extrabold', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+.listDes{
+    grid-row: 2;
+    color:white;
+    font-family: 'gilroy-extrabold', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.listDes1{
+    text-align: end;
+}
+.listDes2{
+    text-align: end;
+}
+.listDes3{
+    text-align: end;
+}
